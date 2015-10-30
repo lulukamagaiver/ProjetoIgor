@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+ul{
+	height:40px;
+	width:960px;
+	float:left;
+	margin-right:15px;
+	margin-top:4px;
+	transition:ease-in-out .4s all;
+	-webkit-transition:ease-in-out .4s all;
+	-o-transition:ease-in-out .4s all;
+	-ms-transition:ease-in-out .4s all;
+	-moz-transition:ease-in-out .4s all;
+}
+
+ul li{
+		height:30px;
+		font-family:'Calibri', Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+		font-size:10pt;
+                font-weight: bold;
+		float:left;
+		list-style:none;
+		/* background:linear-gradient(to bottom, #585858 0, #2F2F2F 100%) no-repeat; */
+		background: url(../imgs/icones/botao_menu.png);
+		background-size: 130px;
+		color:#FFFFFF;
+		cursor:pointer;
+		background-repeat:no-repeat;
+		background-position:center bottom;
+		margin:0 3px;
+		text-align:center;
+		padding:0 30px;
+		line-height:30px;
+		border-radius:5px 5px 0 0;
+		-webkit-border-radius:0 0 5px 5px;
+		-moz-border-radius:0 0 5px 5px;
+		-o-border-radius:0 0 5px 5px;
+}
+
+
+ul li:hover{
+	color:#FFF;
+	/* background-color:#CCC; */
+        text-decoration: underline;
+	transition:ease-in-out .4s all;
+	-webkit-transition:ease-in-out .4s all;
+	-o-transition:ease-in-out .4s all;
+	-ms-transition:ease-in-out .4s all;
+	-moz-transition:ease-in-out .4s all;
+}
+
+ul li img{
+	margin:1px 0 0 0;
+}
+
+li ul{
+	position:absolute;
+	width:200px;
+	height:0px;
+	padding:0px;
+	display:block;
+	margin:0 0 0 -25px;
+	overflow:hidden;
+	transition:ease-in-out .4s all;
+	-webkit-transition:ease-in-out .4s all;
+	-o-transition:ease-in-out .4s all;
+	-ms-transition:ease-in-out .4s all;
+	-moz-transition:ease-in-out .4s all;
+}
+
+li ul li{
+	float:left;
+	width:150px;
+	text-align:left;
+	background-image:none;
+	background-color:#666;
+	margin:3px 0px 0px 0px;
+	text-align:left;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	color:#FFF;
+}
+
+li ul li:hover{
+	background-color:#737373;
+	color:#FFF;
+        text-decoration: underline;
+	transition:ease-in-out .4s all;
+	-webkit-transition:ease-in-out .4s all;
+	-o-transition:ease-in-out .4s all;
+	-ms-transition:ease-in-out .4s all;
+	-moz-transition:ease-in-out .4s all;
+}
+
+
+ul li:hover ul{
+	height:370px;
+}
+
+.down{
+	width:0px; height:0px;
+	border:6px transparent solid;
+	border-top:6px solid #000;
+	float:right;
+	margin-left:10px;
+	margin-top:-19px;
+}
+
+ul li ul li ol{
+	position:absolute;
+	margin-left:140px;
+	margin-top:-35px;
+	display:none
+}
+
+
+
+ul li ul li:hover ol{
+	display:block;
+}
+
+.dir{
+	width:0px; height:0px;
+	border:6px transparent solid;
+	border-left:6px solid #000;
+	float:right;
+	margin-top:11px;
+	margin-left:10px;
+}

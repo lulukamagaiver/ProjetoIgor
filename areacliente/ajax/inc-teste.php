@@ -1,0 +1,1 @@
+<p class="cancel" onClick="$('.PopUp').fadeOut();">Cancelar</p>

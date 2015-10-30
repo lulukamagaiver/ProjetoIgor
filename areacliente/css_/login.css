@@ -1,0 +1,74 @@
+@import url("estilo.css");
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0 auto;
+}
+
+body{
+	background-color:#CCC;
+}
+
+#box{
+	width:300px;
+	height:300px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-160px;
+	margin-top:-160px;
+	background-color:#FFF;
+	box-shadow:0px 0px 20px #000;
+	-moz-box-shadow:0px 0px 20px #000;
+	-webkit-box-shadow:0px 0px 20px #000;
+	-o-box-shadow:0px 0px 20px #000;
+	-ms-box-shadow:0px 0px 20px #000;
+	padding:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+}
+
+#box input[type=text], #box input[type=password]{
+	width:278px;
+	border:1px solid #ccc;
+	height:25px;
+	font-size:18px;
+	line-height:25px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:0 10px 0 10px;
+	color:#666;
+}
+
+h1{
+	font-size:26px;
+	color:#666;
+	margin-bottom:25px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#resultado{
+	color:#F00;
+	margin-left:35px;
+	margin-top:-25px;
+}
+
+.Port{
+	position:absolute;
+	right:50px;
+	bottom:0px;
+	color:#000;
+	height:30px;
+	width:1000px;
+	text-align:right;
+	line-height:30px;
+}
+
+.Port a{
+	color:#06C;
+	text-decoration:none;
+}
+
+.Port a:hover{
+	color:#0C6;
+}

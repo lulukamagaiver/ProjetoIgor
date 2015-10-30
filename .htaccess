@@ -1,0 +1,17 @@
+RewriteEngine On
+RewriteRule %{REQUEST_FILENAME} !-f
+RewriteRule %{REQUEST_FILENAME} !-d
+RewriteRule ^login/?$ login.php [L]
+RewriteRule ^logout/?$ logout.php [L]
+RewriteRule ^redefinirsenha/?$ redefinirsenha.php [L]
+RewriteRule !\.(gif|jpg|jpeg|png|css|js|swf|php|xml|ani|cur|icon|ico|doc|docx|pdf|php|txt)$ index.php [L]
+<IfModule mod_suphp.c>
+  suPHP_ConfigPath /home/data/public_html/phpini
+  <Files php.ini>
+    order allow,deny
+    deny from all
+  </Files>
+</IfModule>
+#Adjust default time zone 
+SetEnv TZ America/Los_Angeles;
+#php_value date.timezone "America/Sao_Paulo";
